@@ -1,0 +1,67 @@
+.custom-navbar {
+    background-color: #fff; /* Default background */
+    border: 2px solid #f8e9e9; /* Border color */
+    border-radius: 8px; /* Optional: rounded edges */
+    padding: 10px;
+}
+
+/* CSV Upload Section Styling */
+.csv-upload-container {
+    background: #ffffff; /* White background for a clean look */
+    border: 1px solid #ddd; /* Light border for structure */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Adjust width */
+    margin: 40px auto; /* Centering */
+    text-align: left; /* Align text to the left */
+}
+
+/* Title and CSV Icon in One Line */
+.csv-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2rem; /* Match navbar font size */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* CSV Icon Styling */
+.csv-icon {
+    width: 30px; /* Smaller icon */
+    height: auto;
+}
+
+/* File Input Styling */
+#csvFile {
+    cursor: pointer;
+}
+
+/* File Content Display */
+#fileContent {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    font-size: 0.9rem; /* Smaller font for readability */
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    font-weight: 500;
+}

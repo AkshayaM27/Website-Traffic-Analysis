@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Metrics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>/* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        
+        
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        h4 {
+            color: #0056b3;
+        }
+        
+        p, ul {
+            line-height: 1.6;
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+            /* Footer */
+            footer {
+                margin-top: auto;
+                background-color: #343a40;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
+        
+        </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+    <!-- Nav Bar starts -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='images/icon.png') }}" alt="Bootstrap" width="30" height="32">
+              </a>
+          <a class="navbar-brand" href="#">Site Metrics</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">About</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="{{ url_for('features') }}">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Nav Bar ends -->
+     <!-- About content starts -->
+     <main>
+      <section>
+          <img src="{{ url_for('static', filename='images/question-mark.png') }}" alt="Bootstrap" width="30" height="32">
+          <h4>What is Site Metrics?</h4>
+          <p>Site Metrics is a dynamic application designed to simplify website traffic analysis. It provides real-time insights into key metrics such as total visits, traffic sources, bounce rates, session durations, and user locations.</p>
+      </section>
+      
+      <section>
+        <img src="{{ url_for('static', filename='images/leadership.png') }}" alt="Bootstrap" width="30" height="32">
+          <h4>Our Mission</h4>
+          <p>Our goal is to empower businesses and website owners with actionable data, enabling them to optimize their online presence and enhance user engagement.</p>
+      </section>
+      
+      <section>
+        <img src="{{ url_for('static', filename='images/contact-mail.png') }}" alt="Bootstrap" width="30" height="32">
+          <h4>Contact Us</h4>
+          <p>Have questions or suggestions? Reach out to us at <a href="mailto:makshaya2704@gmail.com">support@sitemetrics.com</a>.</p>
+      </section>
+  </main>
+      <!--About content ends  -->
+      <footer>
+        &copy; 2025 Site Metrics 
+    </footer>
+
+</body>
+</html>
